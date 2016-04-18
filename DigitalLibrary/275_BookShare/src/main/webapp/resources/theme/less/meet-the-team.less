@@ -1,0 +1,72 @@
+/*===================================================================================*/
+/*  MEET THE TEAM
+/*===================================================================================*/
+.home-page-2 {
+    .meet-team {
+        .line-block {
+            display:table;
+            width:100%;
+            max-width:100%;
+        }
+        .line-title {
+            display:table-row;
+            white-space:nowrap;
+            h2 {
+                overflow:hidden;
+                display:table-cell;
+                width:1px;
+                table-layout:fixed;
+                padding:0 40px;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            span.spacer {
+                display:table-cell;
+            }
+            span.spacer:after {
+                display:inline-block;
+                width:100%;
+                content:".";
+                font-size:0;
+                color:transparent;
+                height:2px;
+                background:#e7e9e5;
+                vertical-align:middle;
+                position:relative;
+                top:-1px;
+            }
+        }
+        .meet-team-outer {
+            .meet-team-inner {
+                padding: 0 30px;
+                .team-member {
+                    img {
+                        -webkit-border-radius: 100px;
+                         -moz-border-radius: 100px; 
+                         border-radius: 100px; 
+                        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.17); 
+                         -moz-box-shadow: 0 1px 3px rgba(0,0,0,.17); 
+                         box-shadow: 0 1px 3px rgba(0,0,0,.17);
+                        display: inline-block;
+                    }
+                }
+                h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #000;
+                    margin-top: 40px;
+                }
+                span {
+                    color: #599806;
+                    font-weight: normal;
+                    font-size: 13px;
+                }
+                hr {
+                    border-color: black;
+                    border-width: 2px;
+                    width: 26%;
+                }
+            }
+        }
+    }
+}

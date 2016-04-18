@@ -1,0 +1,110 @@
+/*===================================================================================*/
+/*  FILTER
+/*===================================================================================*/
+.control-bar{
+	.filter-product-block > a,
+	.le-select .selectpicker{
+		 background: #fafbf8;
+	    border: 1px solid rgba(0,0,0,0);					    					    
+	    font-size: 14px;
+	    height: 51px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+		 width: 75%;/*341px;*/						
+		 -webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.17);
+		-moz-box-shadow: 0 2px 3px rgba(0,0,0,.17);
+		box-shadow: 0 2px 3px rgba(0,0,0,.17);
+		border-bottom:3px solid #edefeb;
+		line-height:48px;
+		font-family: 'FiraSansHeavy';
+		text-transform:uppercase;
+		.left{
+			margin-left:30px;
+		}
+	}
+	.filter-product-block > a{
+		color: #222;
+		display: block;
+	}
+	.le-select{
+		float:right;
+		background: #fafbf8;
+	    border: 1px solid rgba(0,0,0,0);					    					    
+	    font-size: 14px;
+	    height: 51px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+		 width: 75%;/*341px;*/						
+		 -webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.17);
+		-moz-box-shadow: 0 2px 3px rgba(0,0,0,.17);
+		box-shadow: 0 2px 3px rgba(0,0,0,.17);
+		border-bottom:3px solid #edefeb;
+		line-height:48px;
+		font-family: 'FiraSansHeavy';
+		text-transform:uppercase;
+		position:relative;
+		&:after{
+			 color: #3D3D3D;
+		    content: "\f0dd";
+		    font-family: fontawesome;
+		    font-size: 15px;
+		    height: 13px;
+		    position: absolute;
+		    right: 17px;
+		    top: -5%;
+		}
+		
+		.dropdown-menu.open{
+			ul{
+				li{
+					a{
+						font-family: 'Fira Sans', sans-serif;
+						font-weight:400;
+						text-transform:lowercase;
+						&:hover,
+						&:focus{
+							color:#599806;
+						}
+					}
+				}
+			}
+		}
+		.bootstrap-select .btn:focus{
+			outline:none !important;
+		}
+		select{
+			bottom: 0;
+		    height: 32px !important;
+		    left: 0;
+		    position: absolute;
+		    width: 100% !important;
+		}
+	}
+	.filter{
+		padding-left:0px;
+
+	}
+	.sorting{
+		padding-right:0px;
+		.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+			width:275px;
+			.btn-default{
+				padding-top:0px;
+				padding-bottom:0px;
+			}
+		}
+	}
+	.books-result{
+		font-size:16px;
+		line-height:48px;
+		font-family: 'Fira Sans', sans-serif;
+		font-weight:500;
+		color:#333;
+	}
+}

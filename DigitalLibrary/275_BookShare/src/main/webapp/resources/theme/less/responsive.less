@@ -1,0 +1,943 @@
+/*===================================================================================*/
+/*  Responsive Layout
+/*===================================================================================*/
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: @screen-xs-max) { 
+.navbar{
+    .navbar-right{
+        .icon{
+            a{
+                font-size:17px;
+                display:inline-block;
+                line-height:20px !important;
+            }
+        }
+    }
+}
+.modal{
+    &.login{
+        .modal-dialog{
+            .modal-body{
+                .forgot-password{
+                    margin-top:20px;
+                    display:block;
+                    color:#fff;
+                    margin-left:0px;
+                    &:hover,
+                    &:focus{
+                        color:#599806;
+                    }
+                }
+                
+            }
+            .modal-footer{
+                .text-center{
+                    .social-list{
+                        li{
+                            a{
+                                font-size: 27px;
+                                height: 48px;
+                                line-height: 48px;
+                                text-align: center;
+                                width: 48px;
+                            }
+                            &:last-child{
+                                margin-right:0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.header{
+    .main-header{
+        height:300px !important;
+        .top-search-holder{
+             margin-bottom: 30px;
+             /*margin-left: 9px;*/
+        }
+        .top-cart-row{
+            margin-top:20px;
+            text-align:center;
+            .shopping-cart-block{
+                display:inline-block;
+                /*margin:0 65px;*/
+            }
+        }
+    }
+
+
+    .header-nav{
+        background:#000 !important;
+        border-bottom:3px solid #000;
+        -webkit-border-radius: 0px;
+             -moz-border-radius: 0px; 
+             border-radius: 0px;
+        .nav{
+            > li{
+                > a{
+                    color:#e8e8e8 !important;
+                    &:hover,
+                    &:focus
+                    {
+                        background:#599907 !important;
+                        color:#fff !important;
+                    }
+                }
+                &.open{
+                   > a{
+                         background:#599907 !important;
+                         color:#fff !important;
+                     }
+                }
+            }
+            .dropdown-menu{
+                .yamm-content{
+                    .links{
+                        li{
+                            a{
+                                 color:#e8e8e8 ;
+                                  &:hover,
+                                   &:focus{
+                                    color: #599907;
+                                }
+                            }
+                        }
+                    }
+                    .title{
+                        color:#e8e8e8 ;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-page{
+    .home-slider{
+        #hero{
+            height:610px !important;
+            .item{
+               height:610px !important; 
+            }
+        
+            .container{
+                margin-left:-15px;
+                margin-right:-15px;
+                .caption{
+                    text-align:center;
+                }
+            }
+        }
+    }
+    .wide-banners{
+        .wide-banner{
+            margin-bottom:20px;
+            .strip{
+                .title{
+                    &:after{
+                        left:64px;
+                    }
+                }
+            }
+            .image{
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+    .latest-product{
+        .latest-product-block{
+            margin-right:15px;
+            .icon-block{
+                margin-top:15px;
+            }
+        }
+    }
+
+
+}
+
+
+    .module{
+        .module-body{
+            .full-width{
+                .col-md-3{
+                    width:100%;
+                }
+            }
+        }
+    }
+
+    .module{
+        .module-body{
+                .col-md-3{
+                    width:100%;
+                    .book{
+                        width:100%;
+                    }
+                }
+            
+        }
+    }
+
+.book{
+     .book-cover{
+            &:after{
+                left:56px;
+                top:183px;
+            }
+        }
+    }
+
+    .customer-testimonial{
+        .module-body{
+            .row{
+                &:first-child{
+                    margin-bottom:30px;
+                }
+            }
+        }
+    }
+
+    .blog{
+        .module-body{
+            .col-md-6{
+                margin-bottom:20px;
+                .blog-image{
+                    width:100%;
+                    margin-bottom:20px;
+                    img{
+                        width:100%;
+                        display:block;
+                        height:auto;
+                    }
+                }
+                .blog-info{
+                    width:100%;
+                }
+                &.last-child{
+                    margin-bottom:0px;
+                }
+            }
+        }
+    }
+
+    .category-slider{
+        height:730px;
+        #owl-main{
+            .item{
+                height:680px !important;
+                .caption{
+                    text-align:center;
+                    
+                }
+                .content{
+                    .book-in-shelf{
+                        .book-shelf{
+                           left:-1px;
+                           top:-99px;
+                           background-size:100%;
+                           .slider-book-cover{
+                              left:0px;top:-20px;   
+                           }  
+                        }
+                    }
+                }       
+    
+            }
+        }
+    }
+
+    .control-bar{
+        .filter-product-block,
+        .le-select{
+            display:block;
+            margin:0 auto;
+        }
+        .filter{
+           padding-left:15px;    
+        }
+        .sorting{
+            padding-right:15px;
+            .le-select{
+                float:none;
+            }
+            
+        }
+    }
+
+    .navbar-primary{
+         .navbar-toggle{
+            border-color: #DDDDDD;
+            .icon-bar{
+                 background-color: #888888;
+                     -webkit-border-radius: 1px;
+                     -moz-border-radius: 1px; 
+                     border-radius: 1px;
+                    display: block;
+                    height: 2px;
+                    width: 22px;
+            }
+        }
+    }
+
+    .customer-testimonial{
+        .module-body{
+            .testimonial-block{
+                .inner-testimonial-block{
+                    margin:0px;
+                }
+            }
+        }
+    }
+
+    .single-book-block{
+         .review-list{
+          li .paper{
+            width:290px;
+            padding:6px 5px 270px 23px;
+          }
+      }
+  }
+
+  .post{
+    padding-left:15px;
+    .post-entry{
+         .post-content {
+            .about-banksy-blog {
+                .col-md-7{
+                    padding-left:15px;
+                }
+            }
+            .mbt-pager{
+                margin-top:-4px;
+            }
+            .post-comment{
+                .comment{
+                    padding:0 15px;
+                }
+            }
+        }
+    }
+  }
+
+    .about-us{
+        .about-us-block{
+            .about-us-content{
+              .left-col{
+                   padding-left:0px;
+                   padding-right:0px;
+              }
+          }
+        }
+  }
+
+    .footer-content{
+       .contact-form-container{
+            .container {
+                .contact-block{
+                    width:266px;
+                }
+            }
+        }
+    }
+
+    .other-footer-content{
+         .other-contact{
+          .nearest-dealer-block{
+              width:325px;
+          }
+      }
+    }
+
+
+    .header {
+    .header-nav{
+     .navbar-primary {
+        .navbar-nav {
+            > li:first-child {
+                > a:before{
+                    display:block;
+                }
+                }
+            }
+        }
+    }
+}
+
+.yamm {
+    .dropdown-menu {
+        li{
+            a{
+                color:#fff;
+                &:hover,
+                &:focus{
+                    background:rgba(0,0,0,0);
+                }
+            }
+            
+        }
+    }
+}
+
+.footer-content{
+ .contact-form-container {
+    .container{
+         .row{
+            padding-bottom:0px;
+          .contact-block{
+                width:100%;
+                -webkit-box-shadow: none; 
+                 -moz-box-shadow: none; 
+                 box-shadow: none;
+              }
+          }
+      }
+  }
+}
+
+.info-404{
+    .title{
+        text-align:center;
+        font-size:100px;
+    }
+    .right-info{
+        padding-left:15px;
+        text-align:center;
+        padding-top:30px;
+    }
+}
+.home-page-2 {
+    .blog-post{
+         .blog-post-outer{
+              .blog-img{
+                padding-left:15px;
+              }
+              .blog-content{
+                padding-right:15px;
+              }
+          }
+    }
+    .banner-02{
+        .big-banner{
+            margin-bottom:10px;
+        }
+    }
+    .new-info{
+        .news-post{
+            padding-left:0px !important;
+            padding-right:0px !important;
+             margin: 0 10px; 
+        }
+    }
+
+}
+
+#wrapper.toggled #filter-wrapper,
+ #wrapper.toggled #cart-dropdown-wrapper{
+    width:310px;
+ }
+
+ .single-book-block{
+      .single-book{
+           .title{
+              font-size:28px;
+           }
+        }
+}
+
+.other-footer-content{
+    .other-contact{
+        .map-holder,
+        .content-holder{
+             width:100%;
+        }
+    }
+}
+
+.other-footer-content{
+    .other-contact{
+        .nearest-dealer-block{
+            position: static;
+            }
+        }
+    }
+
+    #wrapper.toggled.right #page-content-wrapper{
+         margin-left: -309px;
+    }
+    
+    .latest-product .module-body .book-in-shelf .book-shelf{
+        background:url("../images/shelf/r1.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+       
+    }
+
+    
+
+    .copyright-footer{
+        margin-top:10px;
+    }
+
+    .home-page-2 .latest-product .module-body .book-in-shelf .book-shelf{
+        background-size:100%;
+    }
+
+    .home-page-2 .latest-product .new-arrival .bk-cover.product-book-cover{
+        top:-50px;
+    }
+    .home-page-2{
+        .slider-2{
+            .content{
+                .row{
+                    text-align:center;
+                }
+            }
+        }
+    }
+
+    .home-page-2 .slider-2{
+    background-size:auto 100%;
+}
+
+.other-footer-content .other-contact .nearest-dealer-block{
+    width:100%;
+}
+
+.all-categories .books-categories .module-body .nav > li{
+    margin-right:27px;
+}
+
+.all-categories .item{
+    margin-bottom:20px;
+}
+
+.all-brands .brand-outer{
+    padding-left:0px;
+}
+
+.control-bar {
+    .filter{
+       .filter-product-block{
+        a{
+            width:auto;
+            .left{
+                float: right;
+                line-height: 46px;
+            }
+        }
+       }
+   }
+   .le-select{
+    width:auto;
+    padding-left:15px;
+   }
+   .books-result{
+    margin-top:10px;
+   }
+}
+#wrapper.toggled.left{
+    padding-left:290px;
+}
+
+.post .post-entry .post-content .post-comment .comment .image{
+    margin-bottom:20px
+}
+
+.blog-sidebar{
+    margin-top:30px;
+}
+
+.category-slider #owl-main .item .caption{
+    padding-left:0px;
+    padding-right:0px;
+}
+.category-slider #owl-main .item{
+     border-radius:0px;
+    -webkit-border-radius: 0px; 
+    -moz-border-radius: 0px;
+}
+
+.home-page-2 .banner-01{
+   border-radius:3px;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    margin:0 10px;
+    padding:0 10px;
+}
+.home-page-2 .banner-02{
+       margin:20px 1px;
+    padding:0 10px;
+    text-align:center;
+}
+
+.home-page-2 .banner-02 .big-banner{
+     border-radius:3px;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+      padding-left:0px;
+      margin-bottom:20px;
+}
+.home-page-2 .banner-02 .small-banner{
+    border-radius:3px;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    padding-left:0px;
+}
+
+.home-page-2 .new-info{
+    margin-top:30px;
+}
+
+.features-block .icon-media{
+    padding-left:0px;
+}
+
+.image-block .banners .banner .image img{
+    width:100%;
+}
+
+.customer-testimonial{
+    padding-bottom:0px;
+     .module-body{
+          .testimonial-block{
+             &:first-child{
+                margin-bottom:30px !important;
+             }
+          }
+      }
+  }   
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+    .navbar{
+        .navbar-right{
+            .icon{
+                a{
+                    font-size:20px;
+                    display:block;
+                    
+                }
+            }
+        }
+    }
+      .module{
+        .module-body{
+            .full-width{
+                .col-md-3{
+                    width:33%;
+                }
+            }
+        }
+    }
+    .customer-testimonial{
+        .module-body{
+            .testimonial-block{
+                .inner-testimonial-block{
+                    margin:0px;
+                }
+            }
+        }
+    }
+    .footer{
+         .margin-top-10 {
+            .copyright-footer{
+                margin-top:20px;
+            }
+        }
+    }
+
+    .home-slider{
+        #hero{
+            height:620px !important;
+            .item{
+               height:620px !important; 
+            }
+        
+            .container{
+                .caption{
+                    text-align:center;
+                }
+            }
+        }
+    }
+      .category-slider{
+        height:680px;
+        #owl-main{
+            .item{
+                height:630px !important;
+
+                .caption{
+                    text-align:center;
+                    padding-right:0px;
+                    
+                }
+                .content{
+                    .book-in-shelf{
+                        .book-shelf{
+                            left:-13px;
+                             &.shelf{
+                               background-size:auto;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    .about-us{
+        .about-us-block{
+            .about-us-content{
+              .left-col{
+                   padding-left:0px;
+                   padding-right:0px;
+              }
+          }
+        }
+  }
+
+  .footer-content{
+       .contact-form-container{
+            .container {
+                .contact-block{
+                    width:738px;
+                }
+            }
+        }
+    }
+
+
+.footer-content{
+ .contact-form-container {
+    .container{
+         .row{
+            padding-bottom:0px;
+          .contact-block{
+                width:100%;
+                -webkit-box-shadow: none; 
+                 -moz-box-shadow: none; 
+                 box-shadow: none;
+              }
+          }
+      }
+  }
+}
+.info-404{
+    .title{
+       font-size:195px;
+    }
+    .right-info{
+       
+        padding-top:60px;
+    }
+}
+.home-page-2{
+      .banner-02{
+        .big-banner{
+            margin-bottom:20px;
+        }
+    }
+}
+
+.home-page-2 .latest-product .new-arrival .bk-cover.product-book-cover{
+    top:-112px;
+}
+
+.home-page-2 .slider-2{
+    background-size:auto 100%;
+}
+
+.home-page-2 .best-sales .best-sale .bk-cover.product-book-cover{
+    top:-110px !important;
+}
+
+.all-categories .item{
+    margin-bottom:20px;
+}
+
+.all-brands .brand-outer{
+    padding-left:0px;
+}
+
+/*.book-shelf.glass-shelf{
+    background:url('../images/shelf/latest.png') no-repeat center 185px;
+
+}*/
+
+.latest-product{
+    .features-block{
+        .feature-block{
+            .icon-media{
+                 padding-left:47px;
+            }
+            
+        }
+    }
+}
+
+.control-bar {
+    .filter{
+       .filter-product-block{
+        a{
+            width:60%;
+            .left{
+                float: right;
+                line-height: 46px;
+            }
+        }
+       }
+   }
+   .le-select{
+    width:auto;
+    padding-left:15px;
+   }
+}
+
+.home-page-2 .banner-02{
+    text-align:center;
+}
+
+.home-page-2 .new-info{
+    margin-top:30px;
+}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .wide-banners .wide-banner .strip{
+        padding:9px 0px;
+    }
+    .header{ 
+        .main-header {
+            .top-cart-row {
+                .menu-toggle-right {
+                    .cart-right-block{
+                           margin-left: 10px;
+                       }
+                       .cart-block-heading{
+                        font-size:16px;
+                       }
+                   }
+               }
+           }
+
+    }
+
+    #hero #owl-main .item .content .book-in-shelf .book-shelf{
+        background-size:100% auto;
+    }
+
+    /*.bk-cover.slider-book-cover{
+        top:-102px;
+    }*/
+
+    .latest-product .module-body .book-in-shelf .book-shelf{
+        background-size:100%;
+    }
+
+    .home-page-2 .latest-product .module-body .book-in-shelf .book-shelf{
+        background-size:100%;
+    }
+
+    .home-page-2 .latest-product .new-arrival .bk-cover.product-book-cover{
+        top:-145px;
+    }
+
+    .home-page-2 .best-sales .module-body .book-in-shelf .book-shelf{
+        background-size:100% !important;
+    }
+
+    .home-page-2 .best-sales .best-sale .bk-cover.product-book-cover{
+        top:-138px !important;
+    }
+
+    .header .navbar-bookshop .navbar-nav > li{
+        margin-right:18px;
+    }
+
+    .category-slider #owl-main .item .content .book-in-shelf .book-shelf .slider-book-cover{
+        top:-27px;
+    }
+
+    .footer .margin-top-10 .footer-module .footer-module-body .footer-social-contact li{
+        margin-right:-2px;
+    }
+
+    .customer-testimonial .module-body .testimonial-block .inner-testimonial-block{
+        height:237px;
+    }
+
+    .control-bar .filter-product-block, .control-bar .le-select .selectpicker{
+        width:80%;
+    }
+
+    .control-bar .filter-product-block .left, .control-bar .le-select .selectpicker .left{
+        margin-left:10px;
+    }
+
+    .blog-sidebar .widget .sidebar-social-contact li{
+        margin-right:4px;
+    }
+
+    .post .post-entry .post-content .lined-paper-content .paper .tape{
+        right:40%;
+    }
+
+    .about-us .about-us-block .about-us-content .left-col{
+        padding:15px 0;
+    }
+
+    .footer-content .contact-form-container .container .row .contact-block{
+        width:100%;
+    }
+
+    .footer-content .contact-form-container .container .row .contact-block .contact-form-envelope .contact-box .contact-detail .social-connection-list li{
+        margin-right:1px;
+    }
+
+    .info-404 .title{
+        font-size:236px;
+    }
+
+    .home-page-2 .slider-2{
+        background-size:auto 100%;
+    }
+
+    .control-bar {
+        .filter{
+           .filter-product-block{
+            a{
+                width:100%;
+                .left{
+                    margin-left:10px;
+                }
+            }
+           }
+       }
+    }
+
+    .home-page-2 .new-info{
+    margin-top:30px;
+}
+
+   }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+    .book-shelf.glass-shelf{
+       background-size:100%;
+    }
+}

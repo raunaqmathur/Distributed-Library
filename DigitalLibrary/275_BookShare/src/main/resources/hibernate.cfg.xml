@@ -13,7 +13,7 @@
 <!--         <property name="connection.url">jdbc:mysql://digitallibrarysqlinstance.c40exvndrfiw.us-west-2.rds.amazonaws.com:3306/DigitalLibraryDB</property> -->
 <!--         <property name="connection.username">library</property> -->
 <!--         <property name="connection.password">library</property>  -->
-        <property name="connection.url">jdbc:mysql://localhost:3306/BookShareDB</property>
+        <property name="connection.url">jdbc:mysql://cmpe295.c40exvndrfiw.us-west-2.rds.amazonaws.com:3306/bookshareDB</property>
         <property name="connection.username">root</property>
         <property name="connection.password">1234abcd</property>
 

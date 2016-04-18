@@ -1,0 +1,116 @@
+/*===================================================================================*/
+/*  ITEM
+/*===================================================================================*/
+.module{
+  .module-body{
+    .item{
+      .item-details{
+        .item-description{
+          height: 75px;
+          .item-title{
+            font-size: 14px;
+            font-weight: normal;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 500;
+            a{
+              color: #2e312a;
+              &:hover,
+              &:focus{
+                color:#599806;
+              }
+            }
+          }
+          .item-subtitle{
+            font-size: 13px;
+            color: #c8cac2;
+            line-height: 24px;
+            > a{
+              color: #2e312a;
+
+            }
+          }
+          .item-number {
+            color: #b1b5a9;
+          }
+        } 
+      }
+      .actions{
+        position:relative;
+        display:inline-block;
+        width:180px;
+        .item-price.price{
+          background: none repeat scroll 0 0 #f3f6ed;
+          font-size: 15px;
+          font-weight: 700;
+          display: inline-block;
+          line-height: 35px;
+          margin-top: 2px;
+          padding-left: 13px;
+          position: relative;
+          border: 4px solid #f5f8ef;
+          width:100%;
+          text-align: left;
+          background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
+          background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
+          background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
+          background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
+          -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.23);
+          -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.23);
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.23);
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+        }
+        .cart-action{
+          width: 60px;
+          height: 30px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          background-clip: padding-box;
+          background-color: #639f09;
+          -webkit-box-shadow: inset 0 0 5px rgba(255, 255, 190, 0.1), 0 2px 3px rgba(0, 0, 0, 0.17),0 3px #477d05;
+          -moz-box-shadow: inset 0 0 5px rgba(255, 255, 190, 0.1), 0 2px 3px rgba(0, 0, 0, 0.17),0 3px #477d05;
+          box-shadow: inset 0 0 5px rgba(255, 255, 190, 0.1), 0 2px 3px rgba(0, 0, 0, 0.17),0 3px #477d05;
+          background-image: -webkit-linear-gradient(bottom, #4f8d05 0%, #64a216 100%);
+          background-image: -o-linear-gradient(bottom, #4f8d05 0%, #64a216 100%);
+          background-image: -moz-linear-gradient(bottom, #4f8d05 0%, #64a216 100%);
+          background-image: linear-gradient(bottom, #4f8d05 0%, #64a216 100%);
+          position: absolute;
+          right:9px;
+          top: 9px;
+          z-index: 9999;
+          -webkit-transition: all 200ms ease-out;
+          -moz-transition: all 200ms ease-out;
+          -o-transition: all 200ms ease-out;
+          transition: all 200ms ease-out;
+          &:hover,
+          &:focus,
+          &.active
+          {
+          positio:relative;    
+          -webkit-box-shadow: inset 0 0 5px rgba(255,255,190,.1),0 1px 2px rgba(0,0,0,.17),0 2px #477d05;
+          -moz-box-shadow: inset 0 0 5px rgba(255,255,190,.1),0 1px 2px rgba(0,0,0,.17),0 2px #477d05;
+          box-shadow: inset 0 0 5px rgba(255,255,190,.1),0 1px 2px rgba(0,0,0,.17),0 2px #477d05;
+
+          background-image: -webkit-linear-gradient(top, #4f8d05 0%, #64a216 100%);
+          background-image: -o-linear-gradient(top, #4f8d05 0%, #64a216 100%);
+          background-image: -moz-linear-gradient(top, #4f8d05 0%, #64a216 100%);
+          background-image: linear-gradient(to bottom, #4f8d05 0%, #64a216 100%);
+
+          }
+          a{
+            background-image: url("../images/add-to-cart.png");
+            background-repeat: no-repeat;
+            position: relative;
+            text-indent: -9999px;
+            display:block;
+            background-position: center;
+            height:30px;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,77 @@
+/*===================================================================================*/
+/*  HOME PAGE SLIDER
+/*===================================================================================*/
+#hero{
+    height:455px;
+
+    #owl-main{
+        .item{
+            height:455px;
+            background:#fd7f03;
+            padding:70px 0px;
+            .content{
+                .book-in-shelf{
+                    .book-shelf{
+                        background: url("../images/shelf/1.png") no-repeat scroll center 106px rgba(0, 0, 0, 0);
+                        display: block;
+                        position: relative;
+                        text-align: center;
+                        top:110px;
+                    }
+                }
+            }
+            .caption{
+
+                .slider-title{
+                    font-size:36px;
+                    color:#fff;
+                    text-shadow:0 1px 3px rgba(0,0,0,.34);
+                    margin-top:35px;
+
+                    .main{
+                        font-family: 'FiraSansExtraBold';
+                    }
+
+                    .sub{
+                        font-weight: 100;
+                    }
+                }
+                .slider-button {
+                    margin-top:55px;
+                }
+            }
+        }
+        .owl-buttons{
+            display:none;
+        }
+    }
+}
+
+#owl-main{
+    .owl-pagination{
+        .owl-page{
+            &.active,
+            &:hover,
+            &:focus{
+                span{
+                    background:rgba(0,0,0,0);
+                    border:2px solid #59950b;
+                }
+
+            }
+        }
+    }
+}
+
+
+.home-page-2 .slider-2 {
+    background: url("../images/slider-images/banner2.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    height: 477px;
+
+}
+.home-page-2 .slider-2 .bk-cover.product-book-cover{
+    top: 160px;
+    margin-left: 38px;
+    /*width:182px;*/
+    height:273px;
+}

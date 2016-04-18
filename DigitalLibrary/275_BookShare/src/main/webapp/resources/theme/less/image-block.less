@@ -1,0 +1,122 @@
+/*===================================================================================*/
+/*  IMAGE BLOCK
+/*===================================================================================*/
+.image-block{
+	padding-bottom:65px;
+	.banners{
+		overflow:hidden;
+		.banner{
+			position:relative;
+			 .image{
+			 	img{
+			 		height:450px;
+			 		-webkit-border-radius: 4px;
+				    -moz-border-radius: 4px; 
+					border-radius: 4px; 
+					 -webkit-transition: all 0.3s ease;
+				            -moz-transition: all 0.3s ease;
+				            -o-transition: all 0.3s ease;
+				            transition: all 0.3s ease;
+				            
+					        cursor:pointer;
+			 	}
+			 }
+			.caption{
+				position:absolute;
+				bottom:40%;
+				left:20%;
+				right:20%;
+				margin:0 auto;
+				text-align:center;
+				color:#fff;
+
+				.title{
+					font-family: 'FiraSansHeavy';
+					font-size:24px;
+					text-transform:uppercase;
+					color:#fff;
+				}
+				hr{
+					width:30%;
+					border-color:#fff;
+					border-width:2px;
+				}
+			}
+			&.green-banner{
+				&:before{
+	                 content: "";
+				    height: 100%;
+				    left: 0;
+				    overflow: hidden;
+				    position: absolute;
+				    right: 20px;
+				    top: 0;
+				    width: 100%;
+				   
+				     background:rgba(100,160,9,0.8);
+				    border-bottom:4px solid #304105;
+				   -webkit-border-radius: 4px;
+			       -moz-border-radius: 4px; 
+				   border-radius: 4px;
+				   
+				}
+
+			}
+			&.black-banner{
+				&:before{
+	                 content: "";
+				    height: 100%;
+				    left: 0;
+				    overflow: hidden;
+				    position: absolute;
+				    right: 20px;
+				    top: 0;
+				    width: 100%;
+				    background:rgba(43,46,40,0.6);
+				     border-bottom:4px solid #11110f;
+				     -webkit-border-radius: 4px;
+			         -moz-border-radius: 4px; 
+				     border-radius: 4px; 
+				     opacity:0.3;
+				}
+			}
+			&.orange-banner{
+				&:before{
+	                 content: "";
+				    height: 100%;
+				    left: 0;
+				    overflow: hidden;
+				    position: absolute;
+				    right: 20px;
+				    top: 0;
+				    width: 100%;
+				    background:rgba(245,172,117,0.8);
+				    border-bottom:4px solid #653c1e;
+				    -webkit-border-radius: 4px;
+			        -moz-border-radius: 4px; 
+				     border-radius: 4px; 
+				     opacity:0.5;
+				}
+			}
+			&:hover{
+					&:before{
+				 -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px; 
+		border-radius: 4px; 
+			}
+				  img{
+				   	-webkit-transform: rotate(-1deg) scale(1.1);
+	                -moz-transform: rotate(-1deg) scale(1.1);
+	                -ms-transform: rotate(-1deg) scale(1.1);
+	                -o-transform: rotate(-1deg) scale(1.1);
+	                -webkit-border-radius: 4px;
+			    -moz-border-radius: 4px; 
+				border-radius: 4px; 
+
+				   }
+				
+			}
+
+		}
+	}
+}

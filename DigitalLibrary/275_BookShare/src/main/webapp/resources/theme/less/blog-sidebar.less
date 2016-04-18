@@ -1,0 +1,112 @@
+/*===================================================================================*/
+/*  BLOG SIDEBAR
+/*===================================================================================*/
+.blog-sidebar{
+	.widget{
+		.blog-sidebar-title{
+			font-size:18px;
+			font-family: 'Fira Sans', sans-serif;
+			font-weight:700;
+			padding-bottom:15px;
+			border-bottom:2px solid #2e312a;
+		}
+		.sidebar-social-contact{
+			li{
+				margin-right:10px;
+				font-size:17px;
+				a{
+					color:#2e312a;
+					&:hover,
+					&:focus{
+						color:#599806;
+					}
+				}
+			}
+		}
+		.media{
+			.date-wrapper{
+				display: table;
+			    float: left;
+			    text-align: center;
+				.date{
+					 background-color: #fd6804;
+				    -webkit-border-radius: 4px;
+					 -moz-border-radius: 4px; 
+					 border-radius: 4px; 
+				    color: #FFFFFF;
+				    display: table-cell;
+				    height: 30px;
+				    vertical-align: middle;
+				    width: 30px;
+					.day{
+						display:block;
+						font-size:16px;
+						line-height:14px;
+					}
+					.month{
+						font-size:7px;
+						display:block;
+						line-height:7px;
+						font-weight:bold;
+					}
+				}
+			}
+			.media-body{
+				h5{
+					line-height:18px;
+					margin-top:-4px;
+					margin-bottom:0px;
+					a{
+						color:#2e312a;
+						&:hover,
+						&:focus{
+							color:#599806;
+						}
+					}
+				}
+				.comment-count{
+					color:#b1b5a9;
+				}
+			}
+		}
+		.black-box{
+			background: none repeat scroll 0 0 #000000;
+		    -webkit-border-radius: 4px;
+			 -moz-border-radius: 4px; 
+			 border-radius: 4px; 
+		    display: inline-block;
+		    float: left;
+		    height: 60px;
+		    margin-right: 10px;
+		    width: 60px;
+
+		}
+		.category-list{
+			 li{
+				line-height:30px;
+				border-bottom:1px dotted #b2b2b2 ;
+				a{
+					color:#2e312a;
+					display:block;
+					&:hover,
+					&:focus{
+						color:#599806;
+					}
+				}
+				&:last-child{
+					border-bottom:none;
+				}
+				&.sub-menu{
+					> a{
+						border-bottom:1px dotted #b2b2b2 ;
+					}
+					ul{
+						li{
+							padding-left:23px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

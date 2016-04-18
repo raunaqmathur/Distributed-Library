@@ -1,0 +1,359 @@
+/*===================================================================================*/
+/*  SINGLE BOOK
+/*===================================================================================*/
+.single-book-block{
+	.single-book{
+		.book-cover{
+			margin-top:20px;
+			width:268px;
+			height:408px;
+				&:before{
+			    background-image: url("../images/page-overlay-big.png");
+			    background-repeat: no-repeat;
+			    content: "";
+			    height: 411px;
+			    position: absolute;
+			    width: 271px;
+			}
+			&:after{
+		     content: "";
+			display: block;
+			height: 19px;
+			margin-top:-37px;
+			width: 274px;
+
+			-webkit-box-shadow: 0 24px 8px rgba(0,0,0,.27);
+			-moz-box-shadow: 0 24px 8px rgba(0,0,0,.27);
+			box-shadow: 0 24px 8px rgba(0,0,0,.27);
+
+			z-index: -1;
+			opacity: .3;
+			 position: absolute;
+			}
+			img{
+				border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 6px;
+
+			}
+		
+		}
+		.link-block{
+			display:block;
+			
+			.customer-review{			
+				.icon{
+					color:#d0d3cb;
+					margin-right:22px;
+					font-size:20px;
+				}
+                 span{
+                 	display:inline-block;
+					color:#599806;
+					font-size:14px;
+			        font-weight:400;	
+                 }
+
+			}
+		}
+	
+	.title{
+		font-size:36px;
+		line-height:48px;
+		font-family: 'FiraSansHeavy';
+		color:#333;
+		margin-bottom:15px;
+	}
+	.singl-book-author{
+		color:#b1b5a9;
+		margin-bottom:30px;
+		a{
+			color:#2e312a;
+		}
+	}
+	.single-book-price{
+        font-size:24px;
+		line-height:48px;
+		font-family: 'FiraSansHeavy';
+		color:#fd6804;
+	}
+	.add-cart-button{
+		.btn-single{
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px; 
+			border-radius: 3px; 
+			background-color: #639f09;
+
+			-webkit-box-shadow:  0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+			-moz-box-shadow:  0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+			box-shadow:  0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+
+			background-image: -webkit-linear-gradient(top, #61af20 0%, #5c9d1c 100%);
+			background-image: -o-linear-gradient(top, #61af20 0%, #5c9d1c 100%);
+			background-image: -moz-linear-gradient(top, #61af20 0%, #5c9d1c 100%);
+			background-image: linear-gradient(to bottom, #61af20 0%, #5c9d1c 100%);
+			font-size:14px;
+			font-family: 'FiraSansHeavy';
+			padding:14px 28px;
+			border:none;
+			line-height: 1.42857;
+			letter-spacing: 0.05em;
+			text-shadow:0 1px 3px rgba(0,0,0,.34);
+			color:#fff;
+			margin-left:-2px;
+			&:hover,
+			&:focus{
+				background-image: -webkit-linear-gradient(top, #5c9d1c 0%, #61af20 100%);
+			    background-image: -o-linear-gradient(top, #5c9d1c 0%, #61af20 100%);
+			    background-image: -moz-linear-gradient(top, #5c9d1c 0%, #61af20 100%);
+			    background-image: linear-gradient(to bottom, #5c9d1c 0%, #61af20 100%);
+			}
+			&.btn-sm{
+				padding:14px 16px;
+				background-image: -webkit-linear-gradient(top, #62b912 0%, #5ca20c 100%);
+			    background-image: -o-linear-gradient(top, #62b912 0%, #5ca20c 100%);
+			    background-image: -moz-linear-gradient(top, #62b912 0%, #5ca20c 100%);
+			    background-image: linear-gradient(to bottom, #62b912 0%, #5ca20c 100%);
+			    margin-right:-2px;
+			    &:hover,
+			    &:focus{
+					background-image: -webkit-linear-gradient(top, #5c9d1c 0%, #61af20 100%);
+				    background-image: -o-linear-gradient(top, #5c9d1c 0%, #61af20 100%);
+				    background-image: -moz-linear-gradient(top, #5c9d1c 0%, #61af20 100%);
+				    background-image: linear-gradient(to bottom, #5c9d1c 0%, #61af20 100%);
+				}
+			}
+		}
+		
+	}
+	.description{
+		padding-top:65px;
+			padding-right:20px;
+		p{
+			font-size:14px;
+			line-height:24px;
+			margin-bottom:25px;
+
+		}
+	}
+}
+	.review-list{
+		li{
+			margin-bottom:40px;
+			position:relative;
+			.paper{
+				
+			  margin: 0 auto;
+
+			  position: relative;
+
+			  color: #444;
+
+			  line-height: 20px;
+
+			  border: 1px solid #d2d2d2;
+
+			  background: #fdfbe9;
+
+			  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f8e6d2), color-stop(4%, #fdfbe9)) 0 4px;
+
+			  background: -webkit-linear-gradient(top, #f8e6d2 0%, #fdfbe9 8%) 0 4px;
+
+			  background: -moz-linear-gradient(top, #f8e6d2 0%, #fdfbe9 8%) 0 4px;
+
+			  background: -ms-linear-gradient(top, #f8e6d2 0%, #fdfbe9 8%) 0 4px;
+
+			  background: -o-linear-gradient(top, #f8e6d2 0%, #fdfbe9 8%) 0 4px;
+
+			  background: linear-gradient(top, #f8e6d2 0%, #fdfbe9 8%) 0 4px;
+
+
+			  -webkit-background-size: 100% 25px;
+
+			  -moz-background-size: 100% 25px;
+
+			  -ms-background-size: 100% 25px;
+
+			  -o-background-size: 100% 25px;
+
+			  background-size: 100% 25px;
+
+			  -webkit-border-radius: 0px;
+
+			  -moz-border-radius: 0px;
+
+			  border-radius: 0px;
+
+			  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+
+			  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+
+			  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+
+			  padding:6px 5px 4px 23px;
+			  width:731px;
+ 
+			  &:before{
+			  	content: '';
+
+			  position: absolute;
+
+			  width: 4px;
+
+			  top: 0;
+
+			  left: 122px;
+
+			  bottom: 0;
+
+			  border: 1px solid;
+
+			  border-color: transparent #f1e8df;
+
+			  }
+
+			  .head {
+
+			   background-color: #fdfbe9;
+
+			   min-height: 51px;
+
+			   margin-left: -23px;
+
+			   margin-top: -4px;
+
+			}
+
+			.bottom{
+				background-color: #fdfbe9;
+
+			   min-height: 21px;
+
+			   margin-left: -23px;
+
+			   margin-bottom: -4px;
+			}
+			.tape{
+				position:absolute;
+				top:-6px; right:308px;
+				width: 93px;
+				height: 20px;
+				border-left: 1px dashed rgba(0, 0, 0, 0.1);
+				border-right: 1px dashed rgba(0, 0, 0, 0.1);
+
+				-webkit-box-shadow: 0px 0px 2px 0px #ccc;
+				-moz-box-shadow: 0px 0px 2px 0px #ccc;
+				box-shadow: 0px 0px 2px 0px #ccc;
+
+				-webkit-transform: rotate(-1deg) skew(0,0) translate(0%,-5px);
+				-moz-transform: rotate(-1deg) skew(0,0) translate(0%,-5px);
+				-o-transform: rotate(-1deg) skew(0,0) translate(0%,-5px);
+				transform: rotate(-1deg) skew(0,0) translate(0%,-5px);
+				background:#fff;
+				opacity:0.6;
+			}
+
+
+			.review-content{
+			position:relative;
+			top:-36px;
+			height:126px;	
+
+			.customer-image-text{
+				display:block;
+				width:80px;height:80px;
+				border:5px solid #fff;
+				
+				-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.17);
+				-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.17);
+				box-shadow: 0 2px 3px rgba(0, 0, 0, 0.17);
+
+	            overflow:hidden;
+	            -webkit-border-radius: 50%;
+			    -moz-border-radius: 50%; 
+			    border-radius: 50%; 
+	            background:#fce700; 
+	            text-align:center;
+				span{
+					font-size:16px;
+					text-transform:uppercase;
+					color:#000;
+					font-family: 'FiraSansHeavy';
+					line-height:70px;
+				}
+			}
+			.customer-name{
+				font-size:16px;
+				line-height:30px;
+				font-family: 'Fira Sans', sans-serif;
+				font-weight:500;
+				color:#000;
+				display:inline-block;
+			}
+			.posted-date{
+				line-height:18px;
+				color:#b1b5a9;
+				display:inline-block;
+			}
+			.text{
+				line-height:24px;
+				margin-top:-7px;
+			}
+			.reply-review{
+				line-height:22px;
+				color:#599806;
+				font-family: 'Fira Sans', sans-serif;
+				font-weight:500;
+			}
+		}
+		}
+		&:before,
+		&:after{
+			bottom: 15px;
+			-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.17);
+			-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.17);
+			box-shadow: 0 15px 10px rgba(0, 0, 0, 0.17);
+
+			
+			content: "";
+			left: 66px;
+			max-width: 300px;
+			position: absolute;
+			top: 80%;
+			-ms-transform: rotate(-3deg);
+			 -webkit-transform: rotate(-3deg);
+			transform: rotate(-3deg);
+			width: 50%;
+			z-index: -1;
+		}
+		&:after{
+			left: auto;
+			right: 63px;
+			-ms-transform: rotate(3deg);
+			 -webkit-transform: rotate(3deg);
+			transform: rotate(3deg);
+		}
+	
+	}
+}
+
+.book-cover-image{
+	
+	display:inline-block;
+	position:relative;
+	&:before{
+		position:absolute;
+		top:0px;
+		left:0px;
+		height:100%;
+		width:100%;
+		content:"";
+		-webkit-box-shadow: 39px 12px 32px 0 rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 39px 12px 32px 0 rgba(0, 0, 0, 0.08);
+	box-shadow: 39px 12px 32px 0 rgba(0, 0, 0, 0.08);
+		
+	}
+}
+
+}
+
+
