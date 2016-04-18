@@ -131,6 +131,12 @@
 	<artifactId>json</artifactId>
 	<version>20151123</version>
 </dependency>
+<dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jsp-api</artifactId>
+        <version>2.0</version>
+        <scope>provided</scope>
+    </dependency>
 	</dependencies>
 <build>
     <sourceDirectory>src</sourceDirectory>

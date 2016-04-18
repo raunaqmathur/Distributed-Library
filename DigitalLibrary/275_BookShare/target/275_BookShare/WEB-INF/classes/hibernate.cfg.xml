@@ -35,6 +35,7 @@
         
 		<mapping class="edu.sjsu.digitalLibrary.prj.models.user"/>
 		<mapping class="edu.sjsu.digitalLibrary.prj.models.address"/>
+		<mapping class="edu.sjsu.digitalLibrary.prj.models.BookId"/>
 <!-- 		<mapping class="edu.sjsu.digitalLibrary.prj.models.category"/> -->
 <!-- 		<mapping class="edu.sjsu.digitalLibrary.prj.models.book"/> -->
 <!-- 		<mapping class="edu.sjsu.digitalLibrary.prj.models.requestbook"/> -->
