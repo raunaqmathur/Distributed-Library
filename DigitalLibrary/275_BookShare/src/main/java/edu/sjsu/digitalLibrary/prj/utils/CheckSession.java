@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import edu.sjsu.digitalLibrary.prj.models.Login;
+import edu.sjsu.digitalLibrary.prj.models.LoginSamplee;
 
 
  
@@ -47,7 +47,7 @@ public class CheckSession {
 	
 	public boolean checkAuth() {
 		
-		Login login = new Login();
+		LoginSamplee login = new LoginSamplee();
 
 		if(httpSession==null)
     	{

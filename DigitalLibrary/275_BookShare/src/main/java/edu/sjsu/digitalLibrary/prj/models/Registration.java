@@ -19,7 +19,7 @@ private int userId;
 private String emailId;
 
 @Column(name = "name", length = 100)
-private String name;
+private String userName;
 
 
 @Column(name = "phone", length = 45)
@@ -41,7 +41,7 @@ private String parentId;
 private int activeUser;
 
 @Column(name = "Password", length = 100)
-private String password ;
+private String userPassword ;
 
 
 private String confirmPassword ;
@@ -63,12 +63,12 @@ public void setEmailId(String emailId) {
 	this.emailId = emailId;
 }
 
-public String getName() {
-	return name;
+public String getUserName() {
+	return userName;
 }
 
-public void setName(String name) {
-	this.name = name;
+public void setUserName(String userName) {
+	this.userName = userName;
 }
 
 public String getPhone() {
@@ -111,15 +111,16 @@ public void setActiveUser(int activeUser) {
 	this.activeUser = activeUser;
 }
 
-public String getPassword() {
-	return password;
+
+
+
+public String getUserPassword() {
+	return userPassword;
 }
 
-public void setPassword(String password) {
-	this.password = password;
+public void setUserPassword(String userPassword) {
+	this.userPassword = userPassword;
 }
-
-
 
 public String getConfirmPassword() {
 	return confirmPassword;

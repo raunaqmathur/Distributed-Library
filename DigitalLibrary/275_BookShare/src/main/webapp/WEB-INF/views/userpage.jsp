@@ -3,7 +3,7 @@
            uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-<title>CMPE 275 Lab 2</title>
+<title>CMPE 295B BOOK SHARE</title>
 </head>
 <body>
     <form:form id="userpage" method="post" action="/275_LAb_2/homepage/${userpageDetails.id}" commandName="userpageDetails">

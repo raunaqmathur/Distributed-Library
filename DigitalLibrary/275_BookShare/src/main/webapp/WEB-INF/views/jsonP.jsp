@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>CMPE 275 Lab 2</title>
+<title>CMPE 295B</title>
 </head>
 <body>
 	<center>

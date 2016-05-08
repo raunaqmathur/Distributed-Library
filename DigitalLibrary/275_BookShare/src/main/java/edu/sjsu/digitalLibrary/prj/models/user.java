@@ -54,9 +54,31 @@ public class user implements Serializable {
     @Column(name = "Password", length = 100)
     private String password ;
     
+    @Column(name = "activation_code", length = 45)
+    private String activationCode ;
+    
+    @Column(name = "regionId", length = 11)
+    private int regionId ;
+    
 ///////////
     
-    public int getId() {
+    public String getActivationCode() {
+		return activationCode;
+	}
+
+	public void setActivationCode(String activationCode) {
+		this.activationCode = activationCode;
+	}
+
+	public int getRegionId() {
+		return regionId;
+	}
+
+	public void setRegionId(int regionId) {
+		this.regionId = regionId;
+	}
+
+	public int getId() {
 		return id;
 	}
 

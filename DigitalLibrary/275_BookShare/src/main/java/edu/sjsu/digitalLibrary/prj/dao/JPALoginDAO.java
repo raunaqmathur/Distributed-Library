@@ -1,14 +1,6 @@
 package edu.sjsu.digitalLibrary.prj.dao;
 
-import java.sql.*;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-import javax.sql.DataSource;
-
-import org.springframework.beans.factory.annotation.Autowired;
+import org.json.JSONObject;
 
 import edu.sjsu.digitalLibrary.prj.dataoperations.DBCrud;
 import edu.sjsu.digitalLibrary.prj.models.Login;
@@ -36,6 +28,41 @@ public class JPALoginDAO implements LoginDAO{
 		}
 		return loginId;
 	}
+	
+public JSONObject validateActivation(Login login) {
+		
+		System.out.println("in validateActivation jpa");
+		JSONObject obj = new JSONObject();
+		try {
+			
+			DBCrud<Login> db = new DBCrud<Login>();
+			obj = db.validateActivation(login);
+			
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			obj = null;
+			e1.printStackTrace();
+			
+		}
+		return obj;
+	}
 
+public JSONObject checkUser(Login login) {
+	
+	System.out.println("in checkUser jpa");
+	JSONObject obj = new JSONObject();
+	try {
+		
+		DBCrud<Login> db = new DBCrud<Login>();
+		obj = db.checkUser(login);
+		
+	} catch (Exception e1) {
+		// TODO Auto-generated catch block
+		obj = null;
+		e1.printStackTrace();
+		
+	}
+	return obj;
+}
 	
 }

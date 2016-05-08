@@ -109,3 +109,21 @@ CREATE TABLE `address` (
   KEY `userRef1_idx` (`userId`),
   CONSTRAINT `userRef1` FOREIGN KEY (`userId`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8
+
+
+ALTER TABLE `BookShareDB`.`user` 
+ADD COLUMN `activation_code` VARCHAR(45) NULL DEFAULT NULL AFTER `password`;
+
+ALTER TABLE `BookShareDB`.`region` 
+ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `BookShareDB`.`user` 
+ADD CONSTRAINT `regionId`
+  FOREIGN KEY (`regionId`)
+  REFERENCES `BookShareDB`.`region` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+ALTER TABLE `BookShareDB`.`user` 
+ADD COLUMN `regionId` INT(11) NULL AFTER `activation_code`;
+

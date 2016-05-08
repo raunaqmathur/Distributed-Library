@@ -2,6 +2,7 @@ package edu.sjsu.digitalLibrary.prj.models;
 
 
 import java.io.Serializable;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -15,7 +16,7 @@ import javax.persistence.ManyToOne;
 
 
 
-public class MongoBook implements Serializable {
+public class MongoBook implements Serializable,Comparable {
 	
 	    private int bookId;
 	
@@ -39,6 +40,16 @@ public class MongoBook implements Serializable {
 	    private String publisher;
     
 	    private double price;
+
+	    private String isbn;
+	    
+		public String getIsbn() {
+			return isbn;
+		}
+
+		public void setIsbn(String isbn) {
+			this.isbn = isbn;
+		}
 
 		public int getBookId() {
 			return bookId;
@@ -127,5 +138,22 @@ public class MongoBook implements Serializable {
 		public void setPrice(double price) {
 			this.price = price;
 		}
-    
+		class CustomComparator implements Comparator<MongoBook> {
+		    @Override
+		    public int compare(MongoBook o1, MongoBook o2) {
+		    	if(o1.getRating() > o2.getRating())
+		    		return 1;
+		    	else
+		    		return 0;
+		        //return o1.getRating().compareTo(o2.getRating());
+		    }
+		}
+		@Override
+		public int compareTo(Object o) {
+			double compareRatings=((MongoBook)o).getRating();
+			return (int) (this.rating-compareRatings);
+		}
+		
 }
+
+ 

@@ -1,5 +1,5 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<jsp:include page="navbar.jsp" />
+<jsp:include page="header.jsp" />
 <html>
 
 <body>

@@ -1,7 +1,7 @@
 <%@    taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-<title>CMPE 275 BOOK SHARE</title>
+<title>CMPE 295B BOOK SHARE</title>
 </head>
 <body>
     <form:form id="category" action="category" method="post"

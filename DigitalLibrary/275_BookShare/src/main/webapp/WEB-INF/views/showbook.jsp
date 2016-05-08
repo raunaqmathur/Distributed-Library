@@ -1,10 +1,10 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="edu.sjsu.digitalLibrary.prj.models.MongoBook" %>
-<jsp:include page="navbar.jsp" />
+<jsp:include page="header.jsp" />
 <html>
 <head>
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script>
+	<!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script> -->
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
   
 	<style type="text/css">
@@ -13,69 +13,7 @@
 		height:350px;
 	}
 	</style> 
-	<script>
-		$(document).ready(function(){
-	 		var geocoder = new google.maps.Geocoder();
-			var address = document.getElementById('address').value;
-    		geocoder.geocode( { 'address': address}, function(results, status) {
-      		if (status == google.maps.GeocoderStatus.OK) {
-    	  		var res = String(results[0].geometry.location).split(",");
-	    	    res[0] = res[0].replace("(","").trim();
-	    	    res[1] = res[1].replace(")","").trim();
-	    	   
-	    	    var latlng = new google.maps.LatLng(res[0], res[1]);
-	    	    var myOptions = {
-	    	      zoom: 15,
-	    	      center: latlng,
-	    	      mapTypeId: google.maps.MapTypeId.ROADMAP
-	    	    };
-	    	    var map = new google.maps.Map(document.getElementById("map_container"),myOptions);
-    	 
-	    	    var marker = new google.maps.Marker({
-	    	      position: latlng, 
-	    	      map: map, 
-	    	      title:address
-	    	    }); 
-      		
-      		} else {
-    	  
-		    	var latlng = new google.maps.LatLng(37.3357192, -121.8867076);
-		  	    var myOptions = {
-		  	      zoom: 15,
-		  	      center: latlng,
-		  	      mapTypeId: google.maps.MapTypeId.ROADMAP
-		  	    };
-		  	    var map = new google.maps.Map(document.getElementById("map_container"),myOptions);
-		  	 
-		  	    var marker = new google.maps.Marker({
-		  	      position: latlng, 
-		  	      map: map, 
-		  	      title:address
-		  	    }); 
-    	  	}
-      
-        	});    
-		});
 
-
-		function RedirectToEdit() {
-			var x = document.getElementById('bookId').value;
-			if(document.getElementById('redirectTo').value == '')
-				window.location = "../bookhome/" + x;
-			else
-				window.location = document.getElementById('redirectTo').value + "/" + x;
-	
-		}
-	
-		function RedirectToBuy() {
-			var x = document.getElementById('bookId').value;
-			if(document.getElementById('redirectToBuy').value == '')
-				window.location = "../purchase/" + x;
-			else
-				window.location = document.getElementById('redirectToBuy').value + "/" + x;
-		}	
-	
-	</script>
 </head>
 
 <body>
@@ -157,6 +95,18 @@
 					    
 					</tr>
 					
+					
+					<tr class="info">
+					    <td><label>ISBN#</label></td>
+					    <% if(!Book.getIsbn().equals("")){ %>
+					    	<td>${bookdetails.isbn}</td>
+					    <% } else {%>
+							<td>No Info available</td>
+						<% } %>
+					    <td></td>
+					    
+					</tr>
+					
 					<tr class="info">
 					    <td><label>Categories</label></td>
 					    <td>
@@ -171,6 +121,15 @@
 					
 					
 					
+					<tr class="info">
+					    
+					    <% if(null != session.getAttribute("USERNAME")) {%> 
+					    	<td colspan="2" align="right"><a class="btn btn-primary" href="${pageContext.request.contextPath}/requestbook/${bookdetails.bookId}" role="button">Make a request</a>
+					    <% } %>
+							
+					   
+					    
+					</tr>
 					
 					
 					
@@ -184,5 +143,6 @@
 		</div>
 	    	
 		
+	</div>		
 </body>
 </html>

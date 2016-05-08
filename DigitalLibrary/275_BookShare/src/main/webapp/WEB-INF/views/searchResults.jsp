@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<jsp:include page="navbar.jsp" />
+<jsp:include page="header.jsp" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <body>
-	<div class="container-fluid" style="margin-top:15px">  
+	<div class="container-fluid" style="margin-top:40px">  
 		<div class="row-fluid">
 			<div class="container-fluid">
 				<c:forEach items="${pagedetails}" var="result"> 

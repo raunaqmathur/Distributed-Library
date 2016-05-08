@@ -24,7 +24,7 @@ public class JPAUserDAO {
 
 	
 	/*
-	 * Function to add address
+	 * Function to add user
 	 * 
 	 */
 	
@@ -61,6 +61,26 @@ public class JPAUserDAO {
 				}
 		
 	}
+	
+	/*
+	  * function to update user password in the database 
+	  * 
+	  */
+	public void updateUserPassword(int userid, String password) {
+		
+		
+				try {
+					DBCrud<user> db = new DBCrud<user>();
+					db.updateUserPassword(userid, password);
+					
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+		
+	}
+	
+	
 
 	
 	/*

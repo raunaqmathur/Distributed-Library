@@ -64,7 +64,7 @@ import edu.sjsu.digitalLibrary.prj.models.MongoBook;
 import edu.sjsu.digitalLibrary.prj.models.address;
 import edu.sjsu.digitalLibrary.prj.models.Registration;
 import edu.sjsu.digitalLibrary.prj.models.LandingPage;
-import edu.sjsu.digitalLibrary.prj.models.Login;
+import edu.sjsu.digitalLibrary.prj.models.LoginSamplee;
 import edu.sjsu.digitalLibrary.prj.models.category;
 import edu.sjsu.digitalLibrary.prj.models.internalCategory;
 import edu.sjsu.digitalLibrary.prj.models.user;
@@ -101,16 +101,35 @@ public class BookController {
     public ModelAndView showBook(@PathVariable int bookId, HttpServletRequest request) {
     	
     	ModelAndView mv = new ModelAndView();
-    	
+    	System.out.println("book id here:" + bookId);
     	bookModel = searchService.searchBooksInDBByID(bookId + "");
     	
     	System.out.println("Book User ID: " +bookModel.getPublisher() );
 		System.out.println("going: " +bookModel.getCategories().size() );
     	
         mv.addObject("bookdetails", bookModel);
+        //mv.addObject("addressdetails", "101 E San Fernando, Apt#320, San Jose, CA, 95134");
         mv.setViewName("showbook");
         
        return mv;
     }
     
+    @RequestMapping(value = "/convertToParentBook/{bookId}",method = RequestMethod.GET)
+    public Object convertToParentBook(@PathVariable int bookId) {
+    	
+    	//ModelAndView mv = new ModelAndView();
+    	
+    	return "redirect:/showbook/" + getParentBook(bookId);
+       
+    }
+    
+    public int getParentBook( int bookId) {
+    	
+    	
+    	JPABookDAO j = new JPABookDAO();
+    	int parentId = j.getBookParentId(bookId);
+    	
+    	return parentId;
+       
+    }
 }
