@@ -704,9 +704,9 @@ public class FirstController {
     			MongoBook bookDetails =  bookTemp.searchBooksInDBByID(String.valueOf(userbasedRecommBookIds.get(i)));
     			recommendedForUser.add(bookDetails);
     		}
-    		
-    		httpSession.setAttribute("recommendedForUser", recommendedForUser);
-    		httpSession.setAttribute("recommCatBooks", recommCatBooks);
+    		System.out.println("size ********************** " + recommendedForUser.size());
+    		httpSession.setAttribute("recommCatBooks", recommendedForUser);
+    		httpSession.setAttribute("recommendedForYou", recommCatBooks);
 			
 			
 		}

@@ -30,6 +30,7 @@ public class Recommendations {
 		try {
 			
 			//FileSystemResource resource = new FileSystemResource("/resources/userBookData.csv");
+			//DataModel model = new FileDataModel(new File("/Users/raunaqmathur/project295B/Distributed-Library/DigitalLibrary/275_BookShare/src/main/webapp/resources/MahoutData/userBookData.csv"));
 			
 			DataModel model = new FileDataModel(new File("/usr/share/tomcat7/webapps/275_BookShare/src/main/webapp/resources/MahoutData/userBookData.csv"));
 			UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
