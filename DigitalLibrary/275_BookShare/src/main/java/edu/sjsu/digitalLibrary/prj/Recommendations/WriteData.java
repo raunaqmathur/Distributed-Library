@@ -11,7 +11,7 @@ public class WriteData {
 		
 		boolean fileWrite = false;
 		
-		File file = new File("/Users/raunaqmathur/project295B/Distributed-Library/DigitalLibrary/275_BookShare/src/main/webapp/resources/MahoutData/userBookData.csv");
+		File file = new File("/usr/share/tomcat7/webapps/275_BookShare/src/main/webapp/resources/MahoutData/userBookData.csv");
 		
 		try {
 			file.createNewFile();
