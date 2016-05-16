@@ -261,7 +261,7 @@ public class LoginController {
     			
     			message.setText("Dear "+username+"," +
     					"\n\nHere is Your link to change your password (Expires in two hours) " +
-    					"http://54.191.63.218:8080/Distributed-Library/resetpassword/"+result.getInt("userid")+"/"+token+
+    					"http://localhost:8080/Distributed-Library/resetpassword/"+result.getInt("userid")+"/"+token+
     					"\n\nRegards,\n\nDigital Book Share Team\n\nPLEASE DO NOT REPLY TO THIS EMAIL");
 
     			Transport.send(message);
