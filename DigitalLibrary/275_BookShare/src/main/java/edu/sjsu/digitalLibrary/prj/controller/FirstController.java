@@ -628,7 +628,7 @@ public class FirstController {
 		} catch (Exception e) {
 			System.out.println("Exception in FirstController " + e.getMessage());
 			e.printStackTrace();
-			return new ModelAndView("signup", "userdetails", userModel1);
+			return new ModelAndView("home");
 		}
 	}
 
